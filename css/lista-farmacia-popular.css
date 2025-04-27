@@ -1,0 +1,239 @@
+@import url(./global.css);
+
+@font-face {
+  font-family: "Final Six Bold";
+  src: url("../assets/fonts/Final-Six/FinalSixBold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Final Six Medium";
+  src: url("../assets/fonts/Final-Six/FinalSixMedium.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Final Six Heavy";
+  src: url("../assets/fonts/Final-Six/FinalSixHeavy.ttf") format("truetype");
+}
+
+li {
+  list-style: none;
+}
+
+:root {
+  --font-final-six-bold: "Final Six Bold", sans-serif;
+  --font-final-six-medium: "Final Six Medium", sans-serif;
+  --font-final-six-heavy: "Final Six Heavy", sans-serif;
+  --background-color-farmacia-popular: #bd1823;
+  --white: #fff;
+  --black: #000;
+  --background-medicamentos: #fff;
+}
+
+body {
+  background-color: var(--background-color-farmacia-popular) !important;
+  font-family: var(--font-final-six-medium) !important;
+}
+
+header {
+  width: 100%;
+  height: 300px;
+  display: flex;
+  justify-content: space-evenly;
+  padding-top: 10px;
+}
+
+header .img-farmacia-popular {
+  max-width: 200px;
+  width: 100%;
+  height: 200px;
+}
+
+header div:nth-child(1) {
+  margin-top: 20px;
+}
+
+header div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+header div h1 {
+  font-size: 36px;
+  font-family: var(--font-final-six-heavy);
+  color: var(--white);
+}
+
+header .img-logo {
+  max-width: 500px;
+  width: 100%;
+  height: 200px;
+}
+
+main {
+  margin-top: 10px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  gap: 10px;
+}
+
+.container h1 {
+  font-size: 36px;
+  color: var(--white);
+  font-family: var(--font-final-six-bold);
+}
+
+.container h1 span {
+  font-family: var(--font-final-six-heavy);
+}
+
+.container .medicamentos {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 100px;
+  color: var(--black);
+}
+
+.container .medicamentos .esq {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding: 20px 0 20px 20px;
+  width: 400px;
+  height: 100%;
+  background-color: var(--background-medicamentos);
+}
+
+.container .medicamentos .dir {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding: 20px 0 20px 20px;
+  width: 400px;
+  min-height: 1124px;
+  height: 100%;
+  background-color: var(--background-medicamentos);
+}
+
+.container .medicamentos .med {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.container .medicamentos .med h2 {
+  text-align: center;
+  font-family: var(--font-final-six-heavy);
+}
+
+.container .medicamentos .med p {
+  text-align: center;
+  font-family: var(--font-final-six-heavy);
+}
+
+.container .medicamentos .med span {
+  font-family: var(--font-final-six-heavy);
+}
+
+footer {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 100%;
+  gap: 100px;
+  margin-top: 50px;
+  font-size: 18px;
+  font-family: var(--font-final-six-bold);
+}
+
+footer .img-logo-footer {
+  max-width: 400px;
+  width: 100%;
+  height: 120px;
+}
+
+footer div:nth-child(2) {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+footer p {
+  color: var(--white);
+}
+
+footer a {
+  color: var(--white);
+}
+
+@media (max-width: 768px) {
+  .container h1 {
+    padding: 10px;
+  }
+
+  .container .medicamentos {
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+
+@media (max-width: 568px) {
+  header {
+    height: 100%;
+    justify-content: center;
+    flex-direction: column;
+    padding-top: 0px;
+  }
+
+  .container h1 {
+    font-size: 24px;
+  }
+
+  .container .medicamentos .med h2 {
+    font-size: 20px;
+  }
+
+  footer {
+    gap: 20px;
+  }
+
+  footer p {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 468px) {
+  .container .medicamentos .dir {
+    width: 300px;
+    padding: 20px 5px 0 5px;
+  }
+  .container .medicamentos .esq {
+    width: 300px;
+    padding: 20px 5px 5px 5px;
+  }
+
+  .container .medicamentos .med span {
+    font-size: 14px;
+  }
+
+  footer {
+    padding: 10px;
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 400px) {
+  .container h1 {
+    font-size: 20px;
+  }
+}

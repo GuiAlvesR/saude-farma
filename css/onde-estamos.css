@@ -1,0 +1,92 @@
+@import url(./global.css);
+
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+a {
+  color: var(--font-color);
+}
+
+svg {
+  width: 100%;
+}
+
+img {
+  width: 100%;
+}
+
+.loc {
+  max-width: 1000px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 10px;
+  border-radius: 10px;
+  margin: 20px 10px 0 10px;
+  box-shadow: var(--box-shadow);
+}
+
+.loc h1 {
+  font-size: 30px;
+}
+
+.iframe {
+  width: 100%;
+}
+
+.btn-whatsapp {
+  position: fixed;
+  bottom: 14px;
+  right: 24px;
+  z-index: 99;
+}
+
+.zap {
+  max-width: 74px;
+  transition: transform 0.4s;
+}
+
+.zap:hover {
+  transform: scale(1.1);
+}
+
+.btn-whatsapp .tooltip-text {
+  visibility: hidden;
+  position: absolute;
+  width: 125px;
+  top: 8px;
+  left: -144px;
+  padding: 6px;
+  border-radius: 8px;
+  text-align: center;
+  background-color: #000;
+  color: var(--font-color);
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+
+.btn-whatsapp:hover .tooltip-text {
+  visibility: visible;
+  opacity: 1;
+}
+
+@media (max-width: 468px) {
+  .loc h1 {
+    font-size: 20px;
+  }
+
+  .loc h2 {
+    font-size: 20px;
+  }
+
+  .zap {
+    max-width: 60px;
+  }
+}

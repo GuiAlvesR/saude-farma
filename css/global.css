@@ -1,0 +1,39 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --background: #75ab77;
+  --background-secondary: #9fcea0;
+  --font-color: #fffcee;
+  --font-color-secondary: #e5ab62;
+  --box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+body {
+  background-color: var(--background) !important;
+  font-family: "Roboto", sans-serif !important;
+  color: var(--font-color) !important;
+}
+
+i {
+  font-size: 30px;
+}
+
+header {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+header .logo {
+  max-width: 300px;
+  width: 100%;
+  height: 100%;
+  padding-top: 10px;
+}
