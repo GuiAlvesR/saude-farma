@@ -136,20 +136,11 @@ main {
 
 .attention .btn-link {
   display: inline-block;
-  background-color: var(--background-secondary);
   border: 0;
-  border-radius: 50px;
   font-size: 16px;
-  padding: 10px 15px;
   color: var(--font-color);
-  text-decoration: none;
   font-family: "Roboto", sans-serif !important;
-  transition: transform 0.6s ease-in-out;
-}
-
-.attention .btn-link:hover {
-  transform: scale(1.06);
-  color: var(--background);
+  font-weight: bold;
 }
 
 @media (max-width: 768px) {
