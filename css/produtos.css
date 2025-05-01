@@ -32,7 +32,6 @@ main {
 
 .products .cards .card {
   width: 18rem;
-  height: 100%;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   background-color: var(--background);
 }
@@ -42,18 +41,26 @@ main {
   font-weight: bold;
 }
 
-.products .cards .card p {
-  color: var(--font-color);
-}
-
 .products .cards .card img {
   width: 100%;
   max-height: 350px;
   height: 100%;
 }
 
+.products .cards .card .card-body {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+  text-align: center;
+}
+
 .products .cards .card .btn-link {
-  display: inline-block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background-color: var(--background-secondary);
   border: 0;
   border-radius: 50px;
