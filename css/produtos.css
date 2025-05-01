@@ -29,3 +29,42 @@ main {
   justify-content: center;
   margin-top: 20px;
 }
+
+.products .cards .card {
+  width: 18rem;
+  height: 100%;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  background-color: var(--background);
+}
+
+.products .cards .card h5 {
+  color: var(--font-color);
+  font-weight: bold;
+}
+
+.products .cards .card p {
+  color: var(--font-color);
+}
+
+.products .cards .card img {
+  width: 100%;
+  max-height: 350px;
+  height: 100%;
+}
+
+.products .cards .card .btn-link {
+  display: inline-block;
+  background-color: var(--background-secondary);
+  border: 0;
+  border-radius: 50px;
+  font-size: 16px;
+  padding: 10px 15px;
+  color: var(--font-color);
+  text-decoration: none;
+  font-family: "Roboto", sans-serif !important;
+  transition: transform 0.6s ease-in-out;
+}
+
+.products .cards .card .btn-link:hover {
+  transform: scale(1.1);
+}
