@@ -4,7 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Atenção Farmacêutica</title>
-    <link rel="stylesheet" href="../css/servicos.css" />
+
+    <link rel="stylesheet" href="../css/atencao-farmaceutica.css" />
+    <link
+      href="https://assets.calendly.com/assets/external/widget.css"
+      rel="stylesheet"
+    />
 
     <link
       rel="apple-touch-icon"
@@ -52,9 +57,28 @@
                 >Legislação</a
               >
             </p>
+
+            <div class="scheduling">
+              <h2>Agendamento - Espaço Saúde Farma</h2>
+
+              <div class="schedule">
+                <a
+                  href=""
+                  class="btn-schedule"
+                  onclick="Calendly.initPopupWidget({url: 'https://calendly.com/saude-farmaltda2019/60min?hide_gdpr_banner=1&background_color=9fcea0&primary_color=fffcee'});return false;"
+                  >Agende seu Hórario
+                </a>
+              </div>
+            </div>
           </div>
         </div>
       </section>
     </main>
+
+    <script
+      src="https://assets.calendly.com/assets/external/widget.js"
+      type="text/javascript"
+      async
+    ></script>
   </body>
 </html>
