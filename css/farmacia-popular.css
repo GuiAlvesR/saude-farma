@@ -136,18 +136,29 @@ main {
   background-color: rgb(77, 128, 77);
   padding: 10px;
   border-radius: 10px;
-  transition: transform 0.5s ease;
-}
-
-.pharmacy .access-content:hover {
-  transform: translateY(-5px);
-  opacity: 0.9;
 }
 
 .pharmacy .access-content span {
   font-family: italic;
   font-weight: bold;
   font-size: 18px;
+}
+
+.pharmacy .access-content .btn-link {
+  display: inline-block;
+  background-color: var(--background-secondary);
+  border: 0;
+  border-radius: 50px;
+  padding: 10px 15px;
+  color: var(--font-color);
+  text-decoration: none;
+  font-family: "Roboto", sans-serif !important;
+  transition: transform 0.5s ease-in-out;
+}
+
+.pharmacy .access-content .btn-link:hover {
+  transform: translateY(-5px);
+  opacity: 0.8;
 }
 
 @media (max-width: 768px) {
